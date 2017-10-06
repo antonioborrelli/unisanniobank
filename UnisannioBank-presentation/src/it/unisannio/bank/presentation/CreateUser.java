@@ -37,13 +37,11 @@ public class CreateUser extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		if (request.getParameter("codicefiscale").isEmpty() || request.getParameter("nome").isEmpty()
-				|| request.getParameter("cognome").isEmpty() || request.getParameter("email").isEmpty()
-				|| request.getParameter("psw").isEmpty()) {
-
-			request.getRequestDispatcher("errore.jsp").forward(request, response);
-			
-		} else {
+		if ((request.getParameter("codicefiscale") != null && request.getParameter("codicefiscale").isEmpty())
+				|| (request.getParameter("nome") != null && request.getParameter("nome").isEmpty())
+				|| (request.getParameter("cognome") != null && request.getParameter("cognome").isEmpty())
+				|| (request.getParameter("email") != null && request.getParameter("email").isEmpty())
+				|| (request.getParameter("psw") != null && request.getParameter("psw").isEmpty())) {
 
 			String codicefiscale = request.getParameter("codicefiscale");
 			String nome = request.getParameter("nome");
@@ -53,6 +51,11 @@ public class CreateUser extends HttpServlet {
 
 			this.branch.createUser(codicefiscale, nome, cognome, email, psw);
 			request.getRequestDispatcher("index.jsp").forward(request, response);
+
+		} else {
+			System.out.println("ERROREEEEEEE");
+			request.getRequestDispatcher("/error/error.jsp").forward(request, response);
+			
 		}
 
 	}

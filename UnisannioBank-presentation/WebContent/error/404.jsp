@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Index</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>errore!!</h1>
+<h1>Errore 404 risorsa non trovata!</h1>
 </body>
 </html>
