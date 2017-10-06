@@ -7,16 +7,13 @@ $(function() {
 	//GESTIONE EVENTI
 	$(".btn-login").click(showlogin);
 	$(".btn-logout").click(logout);
-	$(".btn-modalLogin").click(login);
+//	$(".btn-modalLogin").click(login);
 	
 	
 	
 	//FUNZIONI
 	function showlogin(){
 		$('#login-modal').modal('show');
-		
-		$( ".btn-login" ).hide();
-		$( ".btn-logout" ).show();
 	};
 	
 	function logout(){

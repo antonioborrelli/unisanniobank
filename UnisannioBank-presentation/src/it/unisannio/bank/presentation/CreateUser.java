@@ -53,7 +53,6 @@ public class CreateUser extends HttpServlet {
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 
 		} else {
-			System.out.println("ERROREEEEEEE");
 			request.getRequestDispatcher("/error/error.jsp").forward(request, response);
 			
 		}
