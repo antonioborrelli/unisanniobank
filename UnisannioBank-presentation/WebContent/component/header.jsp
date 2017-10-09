@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/sticky-footer-navbar.css" >
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/unisannio.css" >
-
+<link rel="icon" href="resource/img/logo-alumniunisannio.png" type="image/png" />
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="resource/bootstrap-4.0.0-beta-dist/js/tether.min.js" ></script>
 <!-- <script src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.slim.min.js"></script> -->
@@ -21,7 +21,7 @@
 <script src="resource/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="resource/bootstrap-4.0.0-beta-dist/js/jquery.cookie.js"></script>
 
-<title>Index</title>
+<title>Unisannio Bank</title>
 </head>
 <body>
 
