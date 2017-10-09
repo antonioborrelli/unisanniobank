@@ -27,8 +27,6 @@ public class Branch implements BranchRemote, BranchLocal{
 	@Override
 	public User createUser(String codicefiscale, String nome, String cognome, String email, String psw) {
 		// TODO Auto-generated method stub
-		
-		
 		User user = new User();
 		user.setNome(nome);
 		user.setCognome(cognome);
@@ -65,7 +63,15 @@ public class Branch implements BranchRemote, BranchLocal{
 		return (ArrayList<Account>) list;
 	}
 	
-	
+	@Override
+	public Account createAccount(String email, double amount) {
+		// TODO Auto-generated method stub
+		Account account = new Account();
+		account.setEmail(email);
+		account.setBalance(amount);
+		entityManager.persist(account);
+		return account;
+	}
 	
 	// Generatore di api_key utilizzato come cookie
 	private String getApi_key(String codicefiscale){
@@ -86,6 +92,8 @@ public class Branch implements BranchRemote, BranchLocal{
 		}
 		
 	}
+
+
 
 
 

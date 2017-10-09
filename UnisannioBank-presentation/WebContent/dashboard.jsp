@@ -22,10 +22,10 @@
 				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
 						
-						<button type="button" class="btn btn-primary">Apertura conto</button><br>
-						<button type="button" class="btn btn-info">Deposito</button><br>
-						<button type="button" class="btn btn-danger">Prelievo</button><br>
-						<button type="button" class="btn btn-warning">Trasferimento</button>
+						<button type="button" class="btn btn-primary btn-createAccount">Apertura conto</button><br>
+						<button type="button" class="btn btn-info btn-deposit">Deposito</button><br>
+						<button type="button" class="btn btn-danger btn-witdraw">Prelievo</button><br>
+						<button type="button" class="btn btn-warning btn-transfer">Trasferimento</button>
 	
 					</div>
 				</div>
@@ -50,7 +50,7 @@
 
 				<div id="collapse2" class="collapse" role="tabpanel"
 					aria-labelledby="heading2" data-parent="#accordion">
-					<div class="card-body">
+					<div class="card-body card-accounts">
 						<table class="table table-hover tabella_conti">
 							<thead>
 								<tr>

@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/unisannio.css" >
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="resource/bootstrap-4.0.0-beta-dist/JS/tether.min.js" ></script>
+<script src="resource/bootstrap-4.0.0-beta-dist/js/tether.min.js" ></script>
 <!-- <script src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.slim.min.js"></script> -->
 <script src="resource/bootstrap-4.0.0-beta-dist/js/popper.min.js"></script>
 <script type="text/javascript" src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.js"></script>
@@ -27,14 +27,14 @@
 
  	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="/"><img src="resource/img/logo-alumniunisannio.png" alt="website template image" class="img_logo"></a>
+      <a class="navbar-brand" href="index.jsp"><img src="resource/img/logo-alumniunisannio.png" alt="website template image" class="img_logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navBarPrincipale" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
         	<li class="nav-item index">
-            <a class="nav-link" href="../view/"></a>
+            <a class="nav-link" href="index.jsp"></a>
           </li>
           <li class="nav-item console">
             <a class="nav-link" href="#"></a>

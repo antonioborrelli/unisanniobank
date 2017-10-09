@@ -20,7 +20,7 @@ public interface BranchLocal {
 	public User getUserByApi_key(String api_key);
 	
 //	public double totalAmount();
-//	public int createAccount(String userId, double amount);
+	public Account createAccount(String email, double amount);
 //	public void deposit(double value);
 //	public void withdraw(double value);
 //	public void transfer(int source, int destination, double value);

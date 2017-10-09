@@ -43,16 +43,8 @@ public class CreateUser extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		String output="Registrazione avvenuta con successo!!!";
-		
-		response.setContentType("text/html;charset=UTF-8");
-	    PrintWriter out = response.getWriter();
-	    try {
-	        /* TODO output your response here.*/
-	        out.println(output);
-	    } finally {
-	        out.close();
-	    }
+		response.sendRedirect("index.jsp");
+
 
 	}
 
@@ -113,30 +105,6 @@ public class CreateUser extends HttpServlet {
 		String json = gson.toJson(risposta); 
 		response.setContentType("application/json;charset=UTF-8");
 		response.getWriter().write(json);
-		
-		
-//		if ((request.getParameter("codicefiscale") != null && request.getParameter("codicefiscale").isEmpty())
-//				|| (request.getParameter("nome") != null && request.getParameter("nome").isEmpty())
-//				|| (request.getParameter("cognome") != null && request.getParameter("cognome").isEmpty())
-//				|| (request.getParameter("email") != null && request.getParameter("email").isEmpty())
-//				|| (request.getParameter("psw") != null && request.getParameter("psw").isEmpty())) {
-//
-//			String codicefiscale = request.getParameter("codicefiscale");
-//			String nome = request.getParameter("nome");
-//			String cognome = request.getParameter("cognome");
-//			String email = request.getParameter("email");
-//			String psw = request.getParameter("psw");
-//
-//			this.branch.createUser(codicefiscale, nome, cognome, email, psw);
-////			request.getRequestDispatcher("https://www.google.it").forward(request, response);
-//			response.getWriter().println("Registrazione avvenuta con successo");
-//
-//		} else {
-////			request.getRequestDispatcher("/error/error.jsp").forward(request, response);
-//			response.getWriter().println("Registrazione non avvenuta con successo");
-//
-//		}
-//		doGet(request, response);
 		
 		
 	}

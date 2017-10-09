@@ -18,7 +18,6 @@ public class User implements Serializable {
 	@Id
 	private String email;
 	private String nome, cognome, codicefiscale, api_key, password;
-
 	private ArrayList<Account> accounts;
 	
 	public User() {

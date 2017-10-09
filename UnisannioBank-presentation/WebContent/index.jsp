@@ -13,51 +13,42 @@
 	<div class="carousel-inner">
 		<div class="carousel-item active carousel-item-left">
 			<img class="first-slide"
-				src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+				src="resource/img/img02.jpg"
 				alt="First slide">
 			<div class="container">
 				<div class="carousel-caption d-none d-md-block text-left">
-					<h1>Example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-						Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-						id nibh ultricies vehicula ut id elit.</p>
+					<h1>Il conto per i giovani a portata di click!</h1>
+					<p>Con zero spese ti permette di studiare ed affrontare le spese universitarie a piccole rate</p>
 					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">Sign
-							up today</a>
+						<a class="btn btn-lg btn-primary" href="dashboard.jsp" role="button">Scopri come</a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="carousel-item carousel-item-next carousel-item-left">
 			<img class="second-slide"
-				src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+				src="resource/img/img01.jpg"
 				alt="Second slide">
 			<div class="container">
 				<div class="carousel-caption d-none d-md-block">
-					<h1>Another example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-						Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-						id nibh ultricies vehicula ut id elit.</p>
+					<h1>Benvenuto Apple Pay</h1>
+					<p>Provalo subito! Apri il conto Unisannio Bank</p>
 					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">Learn
-							more</a>
+						<a class="btn btn-lg btn-primary" href="dashboard.jsp" role="button">Scopri come</a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="third-slide"
-				src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+				src="resource/img/img05.jpg"
 				alt="Third slide">
 			<div class="container">
 				<div class="carousel-caption d-none d-md-block text-right">
-					<h1>One more for good measure.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-						Donec id elit non mi porta gravida at eget metus. Nullam id dolor
-						id nibh ultricies vehicula ut id elit.</p>
+					<h1>Mutuo Giovani</h1>
+					<p>I sogni possono scegliere il posto in cui vivere</p>
 					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">Browse
-							gallery</a>
+						<a class="btn btn-lg btn-primary" href="dashboard.jsp" role="button">Scopri come</a>
 					</p>
 				</div>
 			</div>
@@ -77,24 +68,24 @@
 
 
 <!-- Container fine-->
-<div class="container">
+<div class="container slogan">
 	<div class="mt-3">
-		<h1>Sticky footer with fixed navbar</h1>
+		<h1>La banca pi&ugrave; vicina ai giovani</h1>
 
 	</div>
-	<p class="lead">
-		Pin a fixed-height footer to the bottom of the viewport in desktop
-		browsers with this custom HTML and CSS. A fixed navbar has been added
-		with
-		<code>padding-top: 60px;</code>
-		on the
-		<code>body &gt; .container</code>
-		.
-	</p>
-	<p>
-		Back to <a href="../sticky-footer">the default sticky footer</a> minus
-		the navbar.
-	</p>
+<!-- 	<p class="lead"> -->
+<!-- 		Pin a fixed-height footer to the bottom of the viewport in desktop -->
+<!-- 		browsers with this custom HTML and CSS. A fixed navbar has been added -->
+<!-- 		with -->
+<!-- 		<code>padding-top: 60px;</code> -->
+<!-- 		on the -->
+<!-- 		<code>body &gt; .container</code> -->
+<!-- 		. -->
+<!-- 	</p> -->
+<!-- 	<p> -->
+<!-- 		Back to <a href="../sticky-footer">the default sticky footer</a> minus -->
+<!-- 		the navbar. -->
+<!-- 	</p> -->
 
 
 

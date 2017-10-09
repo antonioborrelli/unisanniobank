@@ -1,18 +1,15 @@
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+<div class="modal fade" id="newaccount-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
 	style="display: none;">
 	<div class="modal-dialog">
 		<div class="loginmodal-container">
-			<h1>Login to Your Account</h1>
+			<h1>Nuovo conto</h1>
 			<br>
-<!-- 			<form method="post" action="..."> -->
-				<input type="text" name="user" placeholder="Username">
-				<input type="password" name="pass" placeholder="Password"> 
-				<input type="submit" name="login" class="login loginmodal-submit btn-modalLogin" value="Login">
-<!-- 			</form> -->
-
-			<div class="login-help">
-				<a href="#">Register</a> - <a href="#">Forgot Password</a> 
-			</div>
+			<div class="alert alert-success modalNewAccountSuccess" role="alert" style="display: none;"></div>
+			<div class="alert alert-danger modalNewAccountError" role="alert" style="display: none;"></div>
+				<input type="number" class="ballanceNewAccount" placeholder="Saldo iniziale">
+				<input type="hidden" class="totAccounts" value="0">
+				<input type="submit" class="login loginmodal-submit btn-modalnewaccount" value="Crea">
+				<input type="submit" class="login loginmodal-submit btn-modalnewaccount-close" value="Chiudi" style="display: none;">
 		</div>
 	</div>
 </div>
