@@ -1,34 +1,37 @@
 package it.unisannio.bank.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
 @SuppressWarnings("serial")
 @Entity
-@NamedQuery(name = "findAllUsers", query = "SELECT u from User u ")
+@NamedQueries({	@NamedQuery(name = "findAllUsers", query = "SELECT u FROM User u "),
+				@NamedQuery(name = "getUserByApiKey", query = "SELECT u FROM User u WHERE u.api_key = :api_key")} )
 public class User implements Serializable {
 
 //	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private String userId;
-	private String nome, cognome, email, api_key,password;
+	private String email;
+	private String nome, cognome, codicefiscale, api_key, password;
 
+	private ArrayList<Account> accounts;
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 		super();
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getNome() {
@@ -47,12 +50,12 @@ public class User implements Serializable {
 		this.cognome = cognome;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getCodicefiscale() {
+		return codicefiscale;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setCodicefiscale(String codicefiscale) {
+		this.codicefiscale = codicefiscale;
 	}
 
 	public String getApi_key() {
@@ -71,11 +74,22 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
+	public ArrayList<Account> getAccounts() {
+		return accounts;
+	}
+
+	public void setAccounts(ArrayList<Account> accounts) {
+		this.accounts = accounts;
+	}
+
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", nome=" + nome + ", cognome=" + cognome + ", email=" + email + ", api_key="
-				+ api_key + ", password=" + password + "]";
+		return "User [email=" + email + ", nome=" + nome + ", cognome=" + cognome + ", codicefiscale=" + codicefiscale
+				+ ", api_key=" + api_key + ", password=" + password + ", accounts=" + accounts + "]";
 	}
+
+
+
 
 	
 	

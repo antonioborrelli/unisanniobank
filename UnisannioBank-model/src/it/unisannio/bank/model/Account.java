@@ -6,18 +6,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 
 @SuppressWarnings("serial")
 @Entity
-@NamedQuery(name = "findAllAmounts", query = "SELECT a from Account a ") 
+@NamedQueries({	@NamedQuery(name = "findAllAmounts", query = "SELECT a FROM Account a "),
+				@NamedQuery(name = "getAccountsByEmail", query = "SELECT a FROM Account a WHERE a.email = :email ")})
 public class Account implements Serializable {
 
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
 	private int accountId;
 	private double balance;
-	private String userId;
+	private String email;
 
 	public Account() {
 		super();
@@ -40,17 +42,19 @@ public class Account implements Serializable {
 		this.balance = balance;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "Account [accountId=" + accountId + ", balance=" + balance + ", userId=" + userId + "]";
+		return "Account [accountId=" + accountId + ", balance=" + balance + ", email=" + email + "]";
 	}
+	
 
+	
 }

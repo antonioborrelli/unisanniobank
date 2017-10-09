@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//IT" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="it">
 <head>
 <!-- Required meta tags -->
 <meta name="viewport"
@@ -13,13 +13,21 @@
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/sticky-footer-navbar.css" >
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/unisannio.css" >
 
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="resource/bootstrap-4.0.0-beta-dist/JS/tether.min.js" ></script>
+<!-- <script src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.slim.min.js"></script> -->
+<script src="resource/bootstrap-4.0.0-beta-dist/js/popper.min.js"></script>
+<script type="text/javascript" src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.js"></script>
+<script src="resource/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resource/bootstrap-4.0.0-beta-dist/js/jquery.cookie.js"></script>
+
 <title>Index</title>
 </head>
 <body>
 
  	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="../view/">LOGO</a>
+      <a class="navbar-brand" href="/"><img src="resource/img/logo-alumniunisannio.png" alt="website template image" class="img_logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,10 +37,10 @@
             <a class="nav-link" href="../view/"></a>
           </li>
           <li class="nav-item console">
-            <a class="nav-link" href="../view/console.php"></a>
+            <a class="nav-link" href="#"></a>
           </li>
           <li class="nav-item admin">
-            <a class="nav-link" href="../view/admin.php"></a>
+            <a class="nav-link" href=""></a>
           </li>
         </ul>
         <div class="form-inline mt-2 mt-md-0">
@@ -45,22 +53,3 @@
 	<!-- Navbar fine-->
 	
 	
-	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
-	aria-labelledby="myModalLabel" aria-hidden="true"
-	style="display: none;">
-	<div class="modal-dialog">
-		<div class="loginmodal-container">
-			<h1>Login to Your Account</h1>
-			<br>
-<!-- 			<form method="post" action="..."> -->
-				<input type="text" name="user" placeholder="Username">
-				<input type="password" name="pass" placeholder="Password"> 
-				<input type="submit" name="login" class="login loginmodal-submit btn-modalLogin" value="Login">
-<!-- 			</form> -->
-
-			<div class="login-help">
-				<a href="#">Register</a> - <a href="#">Forgot Password</a> 
-			</div>
-		</div>
-	</div>
-</div>

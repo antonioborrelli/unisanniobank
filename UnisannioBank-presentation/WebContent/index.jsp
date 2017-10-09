@@ -1,4 +1,6 @@
 <jsp:include page="component/header.jsp" />
+<jsp:include page="component/modalLogin.jsp" />
+<jsp:include page="component/modalRegister.jsp" />
 
 <!-- 	inizio carosel -->
 
