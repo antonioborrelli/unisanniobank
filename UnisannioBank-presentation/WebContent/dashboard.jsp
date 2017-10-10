@@ -1,8 +1,5 @@
 <jsp:include page="component/header.jsp" />
-<jsp:include page="component/modalDeposit.jsp" />
-<jsp:include page="component/modalNewAccount.jsp" />
-<jsp:include page="component/modalTransfer.jsp" />
-<jsp:include page="component/modalWitdraw.jsp" />
+<jsp:include page="component/modalOperazioni.jsp" />
 <div class="container containerDashboard"  style="display: none;">
 
 	<!-- INIZIO PRIMA RIGA -->
@@ -15,17 +12,15 @@
 			<div class="card">
 				<div class="card-header" role="tab" id="headingOne">
 					<h5 class="mb-0">
-						<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> OPERAZIONI </a>
+						<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> INFO </a>
 					</h5>
 				</div>
 
 				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
-						
-						<button type="button" class="btn btn-primary btn-createAccount">Apertura conto</button><br>
-						<button type="button" class="btn btn-info btn-deposit">Deposito</button><br>
-						<button type="button" class="btn btn-danger btn-witdraw">Prelievo</button><br>
-						<button type="button" class="btn btn-warning btn-transfer">Trasferimento</button>
+						<h1>Antonio &egrave; GNOCCO!!!</h1>
+						<h2>Luciano e Luigi sono due frocioni!!</h2>
+						<h3>Benedetta &egrave; una befana!!!</h3>
 	
 					</div>
 				</div>

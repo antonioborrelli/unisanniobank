@@ -8,10 +8,48 @@ $(function() {
 	$(".btn-createAccount").click(showModalNewAccount);
 	$(".btn-modalnewaccount").click(creaConto);
 	$(".btn-modalnewaccount-close").click(hideModalNewAccount);
-	
+	$('.table_accounts tr').click(clickTr);
+	$('.btn-modaloperations').click(chooseOperation);
 	
 	
 	//FUNZIONI
+	function deposit(){
+		//LUIGI!!!
+		alert('hai premuto depositoCheck');
+	};
+	function witdraw(){
+		//BENEDETTA
+		alert('hai premuto prelievoCheck');
+	};
+	function transfer(){
+		//LUCIANO
+		alert('hai premuto trasferimentoCheck');
+	};
+	
+	function chooseOperation(){
+		if($("#depositoCheck").is(':checked'))
+			deposit();
+		else if($("#prelievoCheck").is(':checked'))
+			 witdraw();
+		else if($("#trasferimentoCheck").is(':checked'))
+			transfer();
+	};
+	function clickTr(){
+		var tr = this;
+		var td = tr.children[1];
+		var numeroConto = $(td).html();
+		var td = tr.children[2];
+		var saldoConto = $(td).html();
+		LOG = td;
+		$('.idAccountOperations').val(numeroConto);
+		$('.balanceOperations').val(saldoConto);
+		$(".modaloperationsError").hide();
+		$(".modaloperationsSuccess").hide();
+		$(".modaloperationsError").val();
+		$(".modaloperationsSuccess").val();
+		$('#operations-modal').modal('show');
+		
+	};
 	function hideModalNewAccount(){
 		$('#newaccount-modal').modal('hide');
 		$(".modalNewAccountError").hide();
@@ -19,7 +57,7 @@ $(function() {
 		$('.ballanceNewAccount').val('');
 		$(".btn-modalnewaccount").show();
 		$(".btn-modalnewaccount-close").hide();
-	}
+	};
 	function showModalNewAccount(){
 		$('#newaccount-modal').modal('show');
 		$(".modalNewAccountError").hide();
