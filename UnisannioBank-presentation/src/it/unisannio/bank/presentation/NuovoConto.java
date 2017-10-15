@@ -49,10 +49,10 @@ public class NuovoConto extends HttpServlet {
 		try{
 			JSONObject obj = new JSONObject();
 			String api_key = request.getParameter("api_key");
-			double amount = Double.parseDouble(request.getParameter("amount"));
+//			double amount = Double.parseDouble(request.getParameter("amount"));
 			if(api_key != null && !api_key.equals("")){
 				User user = this.branch.getUserByApi_key(api_key);
-				Account account = this.branch.createAccount(user.getEmail(), amount);
+				Account account = this.branch.createAccount(user.getEmail());
 				if(account!= null){
 					obj.put("error", "false");
 					obj.put("message", "conto creato correttamente");
@@ -71,7 +71,7 @@ public class NuovoConto extends HttpServlet {
 			}
 			
 			response.setContentType("application/json;charset=UTF-8");
-			System.out.println(obj.toString());
+
 			response.getWriter().write(obj.toString());
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

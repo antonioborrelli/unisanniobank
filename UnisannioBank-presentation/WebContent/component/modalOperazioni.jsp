@@ -37,7 +37,7 @@
 				  <input type="text" class="form-control amountOperations" placeholder="Cifra" aria-describedby="basic-addon1" >
 				</div>
 				<br>
-				<div class="input-group">
+				<div class="input-group inputDestinatario">
 				  <span class="input-group-addon" id="basic-addon1">Destinatario</span>
 				  <input type="text" class="form-control idAccountDestinationOperations" placeholder="Numero conto" aria-describedby="basic-addon1" >
 				</div>

@@ -204,3 +204,11 @@ body {
 .slogan{
 	padding-top: 25px!important;
 }
+
+.totalAmount{
+	text-align: center;
+}
+
+.totalAmountUser{
+	text-align: center;
+}

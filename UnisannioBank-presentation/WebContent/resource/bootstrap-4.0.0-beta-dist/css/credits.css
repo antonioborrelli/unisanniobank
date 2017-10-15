@@ -1,0 +1,226 @@
+.owl-carousel .owl-pagination {
+	text-align: center
+}
+
+.owl-carousel .owl-pagination .owl-page {
+	position: relative;
+	background: rgba(255, 255, 255, .7);
+	display: inline-block;
+	overflow: hidden;
+	height: 6px;
+	width: 6px;
+	margin: 6px 4px;
+	text-indent: -200%;
+	z-index: 1000;
+	border-radius: 6px;
+	box-shadow: 0 0 1px rgba(17, 17, 17, .4);
+	-webkit-transition: all .3s cubic-bezier(0, 0, .58, 1);
+	transition: all .3s cubic-bezier(0, 0, .58, 1)
+}
+
+.owl-carousel .owl-pagination .owl-page.active {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3)
+}
+
+.image-slider.owl-carousel .owl-next, .image-slider.owl-carousel .owl-prev
+	{
+	background: 0 0;
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	top: 50%;
+	margin-top: -35px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 36px;
+	display: block;
+	color: #fff
+}
+
+.image-slider.owl-carousel .owl-next span:before, .image-slider.owl-carousel .owl-prev span:before
+	{
+	line-height: 68px
+}
+
+.image-slider.owl-carousel .owl-prev {
+	left: 15px
+}
+
+.image-slider.owl-carousel .owl-next {
+	right: 15px
+}
+
+.tms-carousel {
+	margin: 0 -15px
+}
+
+.tms-carousel .owl-pagination {
+	margin-top: 20px
+}
+
+.demo-preview h4, .feature-link, .inner-nav .sub-menu li a,
+	.module-page-title .h5, .module-title h2, .special-heading,
+	.testimonials-card-author h4 {
+	text-transform: uppercase
+}
+
+.testimonials-card {
+	background: #fff;
+	border: 1px solid #f2f2f2;
+	text-align: center;
+	position: relative;
+	margin: 60px 15px 20px;
+	padding: 0 40px 40px;
+	color: #999;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease
+}
+
+.testimonials-card:hover {
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1)
+}
+
+.testimonials-card-photo {
+	position: absolute;
+	left: 50%;
+	height: 90px;
+	width: 90px;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0)
+}
+
+.testimonials-card-photo img {
+	border-radius: 50%;
+	width: 100%
+}
+
+.testimonials-card-content {
+	padding: 80px 0 10px
+}
+
+.testimonials-card-author {
+	font-size: 14px
+}
+
+.testimonials-card-author h4 {
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin: 0 0 5px
+}
+
+.testimonials-card-author :last-child {
+	margin-bottom: 0
+}
+
+.testimonials-card .testimonials-card-author h4 {
+	color: #313131
+}
+
+.testimonials-card-photo {
+	position: absolute;
+	left: 50%;
+	height: 90px;
+	width: 90px;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0)
+}
+
+.testimonials-card-photo img {
+	border-radius: 50%;
+	width: 100%
+}
+
+.testimonials-card-content {
+	padding: 80px 0 10px
+}
+
+.font-serif, blockquote {
+	font-family: Lora, "Libre Baskerville", serif
+}
+
+.font-serif {
+	font-style: italic
+}
+
+.demo-preview h4, .feature-link, .inner-nav .sub-menu li a,
+	.module-page-title .h5, .module-title h2, .special-heading,
+	.testimonials-card-author h4 {
+	text-transform: uppercase
+}
+
+.testimonials-card-author {
+	font-size: 14px
+}
+
+.testimonials-card-author h4 {
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin: 0 0 5px
+}
+
+.testimonials-card-author :last-child {
+	margin-bottom: 0
+}
+
+.testimonials-card .testimonials-card-author h4 {
+	color: #313131
+}
+
+.owl-item {
+	float: left;
+	width: 370px;
+}
+
+.owl-wrapper {
+	width: 1110px;
+}
+
+#slider {
+	width: 1110px;
+	height: 330px;
+	overflow: hidden;
+}
+
+#slider .slides {
+	display: block;
+	width: 2960px;
+	/*     height: 400px; */
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 370px;
+	/*     height: 400px; */
+}
+
+.headerCredits{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+/* helper css, since we don't have images */
+/* .slide1 { */
+/* 	background: red; */
+/* } */
+
+/* .slide2 { */
+/* 	background: blue; */
+/* } */
+
+/* .slide3 { */
+/* 	background: green; */
+/* } */
+
+/* .slide4 { */
+/* 	background: purple; */
+/* } */
+
+/* .slide5 { */
+/* 	background: pink; */
+/* } */

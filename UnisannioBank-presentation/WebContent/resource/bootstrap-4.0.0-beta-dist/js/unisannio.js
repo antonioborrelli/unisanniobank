@@ -13,6 +13,8 @@ $(function() {
 	$(".btn-modalLogin").click(login);
 	$(".showRegister").click(showregister);
 	$(".btn-modalRegister").click(register);
+	$(".reloadDashboard").click(info);
+	
 
 	
 	//FUNZIONI
@@ -124,15 +126,19 @@ $(function() {
 		$( ".btn-login" ).show();
 		window.location.href = 'index.jsp';
 	};
+	function info(){
+		window.location.href = 'dashboard.jsp';
+	}
 
 	function isLogged(){
 		if($.cookie("api_key")!= null && $.cookie("api_key")!=""){
 			$( ".btn-logout" ).show();
 			$( ".btn-login" ).hide();
-			
+			$( ".btn-info" ).show();
 		}else{
 			$( ".btn-logout" ).hide();
 			$( ".btn-login" ).show();
+			$( ".btn-info" ).hide();
 		}
 	};
 	

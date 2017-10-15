@@ -9,10 +9,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="resource/font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/sticky-footer-navbar.css" >
 <link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/unisannio.css" >
-<link rel="icon" href="resource/img/logo-alumniunisannio.png" type="image/png" />
+<link rel="stylesheet" href="resource/bootstrap-4.0.0-beta-dist/css/credits.css" >
+<link rel="icon" href="resource/img/logo-ico.png" type="image/png" />
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="resource/bootstrap-4.0.0-beta-dist/js/tether.min.js" ></script>
 <!-- <script src="resource/bootstrap-4.0.0-beta-dist/js/jquery-3.2.1.slim.min.js"></script> -->
@@ -46,9 +48,19 @@
         <div class="form-inline mt-2 mt-md-0">
 <!--           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
           <button class="btn btn-outline-success my-2 my-sm-0 btn-login" type="submit" style="display: none;">Login</button>
-          <button class="btn btn-outline-success my-2 my-sm-0 btn-logout" type="submit" style="display: none;">Logout</button>
-        </div>
-      </div>
+			<div>
+				<div class="btn-group">
+					<button class="btn btn-outline-success my-2 my-sm-0 btn-logout"
+						type="submit" style="display: none;">Logout</button>
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-outline-success my-2 my-sm-0 btn-info reloadDashboard"
+						type="submit" style="display: none;">Info Personali</button>
+					
+				</div>
+
+			</div>
+		</div>
     </nav>
 	<!-- Navbar fine-->
 	
