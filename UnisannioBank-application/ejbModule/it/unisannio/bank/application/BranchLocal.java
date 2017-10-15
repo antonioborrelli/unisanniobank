@@ -19,10 +19,14 @@ public interface BranchLocal {
 	public User getUser(String email);
 	public User getUserByApi_key(String api_key);
 	
-//	public double totalAmount();
-	public Account createAccount(String email, double amount);
-//	public void deposit(double value);
+	public double totalAmount();
+	public double totalAmountUser(String api_key);
+	public Account getAccount(int accountid);
+	public Account createAccount(String email);
+	public Account deposit(double value,int accountid);
+	public Account withdraw(double value, int idAccount);
 //	public void withdraw(double value);
-//	public void transfer(int source, int destination, double value);
+	public ArrayList<Account> transfer(int source, int destination, double value);
 //	
 }
+

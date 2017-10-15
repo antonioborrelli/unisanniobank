@@ -4,9 +4,21 @@
 		<jta-data-source>java:/unisanniobank_db</jta-data-source>
 		<class>it.unisannio.bank.model.Account</class>
 		<class>it.unisannio.bank.model.User</class>
+		<class>it.unisannio.bank.model.Log</class>
+<!-- 		<properties> -->
+<!-- 			<property name="hibernate.hbm2ddl.auto" value="create"/> -->
+<!-- 			<property name="hibernate.hbm2ddl.auto" value="update"/> -->
+<!-- 		</properties> -->
+	<shared-cache-mode>ALL</shared-cache-mode>
 		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
 			<property name="hibernate.hbm2ddl.auto" value="create"/>
 			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.cache.use_second_level_cache" value="true"></property>
+			<property name="hibernate.transaction.factory_class" value="org.hibernate.transaction.CMTTransactionFactory"></property>
+			<property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.JBossTransactionManagerLookup"></property>
+			<property name="hibernate.generate_statistics" value="true"/> 
 		</properties>
 	</persistence-unit>
 </persistence>

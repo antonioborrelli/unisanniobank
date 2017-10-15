@@ -13,6 +13,11 @@ public interface BranchRemote {
 	public User getUser(String email);
 	public User getUserByApi_key(String api_key);
 	public ArrayList<Account> getUserAccounts(String email);
-	public Account createAccount(String email, double amount);
+	public Account createAccount(String email);
+	public Account withdraw(double value, int idAccount);
+	public ArrayList<Account> transfer(int source, int destination, double value);
+	public Account deposit(double value,int accountid);
+	public Account getAccount(int accountid);
+
 
 }
